@@ -1,12 +1,11 @@
 "use client";
 
-import * as React from "react";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Instagram, Mail, Heart } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { navItems, socialLinks } from "@/data";
 import { useScrollToSection } from "@/hooks";
+import { motion } from "framer-motion";
+import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
+import Link from "next/link";
 
 const socialIconMap = {
   GitHub: Github,
@@ -24,7 +23,7 @@ export function Footer() {
     <footer className="relative bg-muted/30 border-t border-border">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -47,7 +46,8 @@ export function Footer() {
                 Hauzan Rafi Attallah
               </Link>
               <p className="text-muted-foreground text-sm max-w-xs">
-                Crafting digital experiences with passion and precision. Let&apos;s build something amazing together.
+                Crafting digital experiences with passion and precision.
+                Let&apos;s build something amazing together.
               </p>
             </motion.div>
 
@@ -84,7 +84,8 @@ export function Footer() {
               <h3 className="text-lg font-semibold">Connect</h3>
               <div className="flex gap-3">
                 {socialLinks.map((social) => {
-                  const Icon = socialIconMap[social.name as keyof typeof socialIconMap];
+                  const Icon =
+                    socialIconMap[social.name as keyof typeof socialIconMap];
                   return (
                     <motion.a
                       key={social.name}
@@ -115,9 +116,6 @@ export function Footer() {
           className="py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground"
         >
           <p>© {currentYear} Hauzan Rafi Attallah. All rights reserved.</p>
-          <p className="flex items-center gap-1">
-            Made with <Heart className="h-4 w-4 text-red-500 fill-current" /> using Next.js
-          </p>
         </motion.div>
       </div>
     </footer>

@@ -10,11 +10,11 @@ export const navItems = [
 
 // Social media links
 export const socialLinks = [
-  { name: "GitHub", href: "https://github.com" },
-  { name: "LinkedIn", href: "https://linkedin.com" },
+  { name: "GitHub", href: "https://github.com/hauzanrafiattallah" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/hauzan-rafi/" },
   { name: "Twitter", href: "https://twitter.com" },
-  { name: "Instagram", href: "https://instagram.com" },
-  { name: "Email", href: "mailto:hello@hauzanrafi.com" },
+  { name: "Instagram", href: "https://www.instagram.com/hauzanrafi/" },
+  { name: "Email", href: "mailto:rafihauzan42@gmail.com" },
 ] as const;
 
 // Hero section roles for typewriter effect
@@ -81,19 +81,23 @@ export const skills = [
 export const services = [
   {
     title: "Web Development",
-    description: "Building responsive, fast, and scalable web applications using modern technologies.",
+    description:
+      "Building responsive, fast, and scalable web applications using modern technologies.",
   },
   {
     title: "Mobile-First Design",
-    description: "Creating seamless experiences across all devices with responsive design principles.",
+    description:
+      "Creating seamless experiences across all devices with responsive design principles.",
   },
   {
     title: "UI/UX Design",
-    description: "Designing intuitive interfaces that delight users and drive engagement.",
+    description:
+      "Designing intuitive interfaces that delight users and drive engagement.",
   },
   {
     title: "Performance Optimization",
-    description: "Optimizing applications for speed, accessibility, and search engine visibility.",
+    description:
+      "Optimizing applications for speed, accessibility, and search engine visibility.",
   },
 ] as const;
 
